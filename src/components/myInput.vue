@@ -34,31 +34,44 @@ export default {
   name: 'Input',
   props: {
     value: {
-      type: String
+      type: String,
+      required: false,
+      default: () => false
     },
     name: {
-      type: String
+      type: String,
+      required: false,
+      default: () => false
     },
     label: {
-      type: String
+      type: String,
+      required: false,
+      default: () => false
     },
     placeholder: {
-      type: String
+      type: String,
+      required: false,
+      default: () => false
     },
     errorText: {
-      type: String
+      type: String,
+      required: false,
+      default: () => false
     },
     isTextarea: {
       type: Boolean,
-      default: false
+      required: false,
+      default: () => false
     },
     isRequired: {
       type: Boolean,
-      default: false
+      required: false,
+      default: () => false
     },
     isValidation: {
       type: Boolean,
-      default: false
+      required: false,
+      default: () => false
     }
   }
 }

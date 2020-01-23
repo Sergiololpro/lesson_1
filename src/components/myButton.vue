@@ -11,7 +11,9 @@ export default {
   name: 'myButton',
   props: {
     text: {
-      type: String
+      type: String,
+      required: false,
+      default: () => false
     }
   },
 

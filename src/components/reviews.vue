@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="reviews__h1">Отзывы</h1>
-    <template v-if="$store.state.list.length">
+    <template v-if="showList">
       <reviewsList/>
     </template>
     <template v-else>
@@ -53,6 +53,12 @@ export default {
     text: "",
     formValidation: false
   }),
+
+  computed: {
+    showList() {
+      return this.$store.state.list.length
+    }
+  },
 
   methods: {
     addComment() {

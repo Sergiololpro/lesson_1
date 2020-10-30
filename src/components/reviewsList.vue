@@ -24,7 +24,7 @@ export default {
   
   methods: {
     getDate(date) {
-      return new Date(date).getDate() + "." + new Date(date).getMonth() + 1 + "." + new Date(date).getFullYear()
+      return new Date(date).getDate() + "." + (new Date(date).getMonth() + 1) + "." + new Date(date).getFullYear()
     }
   }
 }
